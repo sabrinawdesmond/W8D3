@@ -1,27 +1,52 @@
 /* PHASE 0: Sidebar */
 
 .content-sidebar {
-  display: block;
-  float: left;
-  width: 200px;
-  min-height: 200px;
-  padding: 20px;
-  background-color: green;
+	float: left;
+    width: 200px;
+    min-height: 200px;
+    padding: 20px;
 }
-.profile-picture a {
+/*.profile-picture a {
   display: block;
-  top: -120px;
+  margin-top: -200px;
   position: relative;
+}*/
+
+
+.profile-picture {
+	display: block;
+    margin-top: -120px;
+    border: 1px solid #000;
+    background: #000;
+    border-radius: 5px;
+    position: relative;
 }
 
-/* .profile-picture {
-  display: block;
-  margin-top: -120px;
-  position: relative;
-} */
-/* 
 img {
   display: block;
   width: 100%;
   height: auto;
-} */
+} 
+
+.profile-nav > li:first-child {
+	border-top: 1px solid #021ff9;
+}
+
+.profile-nav > li {
+	border-bottom: 1px solid #021ff9;
+}
+
+.profile-info {
+	margin: 20px 0;
+}
+
+.profile-info > h2 {
+	font-weight: 700;
+	font-size: 24px; 
+}
+
+.profile-nav a {
+	display: block; 
+	padding: 5px; 
+	font-weight: 700; 
+}
