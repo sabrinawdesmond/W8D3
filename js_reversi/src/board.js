@@ -71,6 +71,12 @@ Board.prototype.getPiece = function (pos) {
  * matches a given color.
  */
 Board.prototype.isMine = function (pos, color) {
+  let x = pos[0]
+	let y = pos[1]
+  if (this.isValidPos(pos) && this.grid[x][y] !== undefined && this.grid[x][y].color === color && this.grid[x][y] !== undefined) {
+    return true
+  }
+  return false
 };
 
 /**
