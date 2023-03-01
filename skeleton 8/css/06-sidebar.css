@@ -1,1 +1,27 @@
 /* PHASE 0: Sidebar */
+
+.content-sidebar {
+  display: block;
+  float: left;
+  width: 200px;
+  min-height: 200px;
+  padding: 20px;
+  background-color: green;
+}
+.profile-picture a {
+  display: block;
+  top: -120px;
+  position: relative;
+}
+
+/* .profile-picture {
+  display: block;
+  margin-top: -120px;
+  position: relative;
+} */
+/* 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
