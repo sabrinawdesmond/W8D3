@@ -118,15 +118,15 @@ Board.prototype._positionsToFlip = function(pos, color, dir, piecesToFlip){
 	let cy = dir[1];
 	let nextPos =  [(x + cx), (y + cy)];
 
+	if (!this.isValidPos(nextPos)) {
+		return []
+	}
 
 	if (this.grid[nextPos[0]][nextPos[1]] === undefined ) {
 		return []
 	} 
 
-	if (this.grid[nextPos[0]][nextPos[1]] !== undefined && this.isValidPos(nextPos) === false) {
-		return []
-	}
-	
+
 	if (this.grid[nextPos[0]][nextPos[1]].color !== color) {
 		piecesToFlip.push(nextPos);
 		return this._positionsToFlip(nextPos, color, dir, piecesToFlip)
